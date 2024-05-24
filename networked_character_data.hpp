@@ -12,6 +12,9 @@ struct NetworkedCharacterData {
     float character_x_position;
     float character_y_position;
     float character_z_position;
+    float character_x_velocity;
+    float character_y_velocity;
+    float character_z_velocity;
     double camera_yaw_angle;
     double camera_pitch_angle;
 };
