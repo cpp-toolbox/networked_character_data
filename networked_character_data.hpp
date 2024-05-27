@@ -2,6 +2,7 @@
 #define NETWORKED_CHARACTER_DATA_HPP
 
 #include <cstdint>
+#include "spdlog/fmt/ostr.h" // must be included
 
 struct NetworkedCharacterData {
     uint64_t client_id;
@@ -18,5 +19,7 @@ struct NetworkedCharacterData {
     double camera_yaw_angle;
     double camera_pitch_angle;
 };
+
+std::ostream &operator<<(std::ostream &os, const NetworkedCharacterData &data);
 
 #endif
