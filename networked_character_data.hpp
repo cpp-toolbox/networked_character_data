@@ -17,6 +17,7 @@ struct NetworkedCharacterData {
     float character_z_velocity;
     double camera_yaw_angle;
     double camera_pitch_angle;
+    int health;
 };
 
 #endif
