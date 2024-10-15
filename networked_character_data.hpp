@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-enum class WeaponType { SniperRifle, RocketLauncher };
+enum class WeaponType { SniperRifle, RocketLauncher, LightningGun, ShotGun, GrenadeLauncher, Knife };
 
 struct NetworkedCharacterData {
     uint64_t client_id;
