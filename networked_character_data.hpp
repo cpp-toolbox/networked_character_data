@@ -3,6 +3,8 @@
 
 #include <cstdint>
 
+enum class WeaponType { SniperRifle, RocketLauncher };
+
 struct NetworkedCharacterData {
     uint64_t client_id;
     // cihtems: client_input_history_insertion_time_epoch_ms
@@ -18,6 +20,7 @@ struct NetworkedCharacterData {
     double camera_yaw_angle;
     double camera_pitch_angle;
     int health;
+    WeaponType active_weapon;
 };
 
 #endif
